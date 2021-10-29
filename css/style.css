@@ -1,0 +1,111 @@
+/* COMMON */
+body {
+  background-color: #f6f5ef;
+}
+
+#root {
+  position: relative;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  min-width: 140px;
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.btn.active {
+  background-color: #00704a;
+  color: white;
+}
+
+/* Item Appender */
+.item-appender {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.item-appender .content-input {
+  display: inline-block;
+  width: 250px;
+  height: 44px;
+  font-size: 22px;
+  border: 1px soli;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.item-appender .content-input::placeholder {
+  text-align: center;
+}
+
+.item-appender .add-btn {
+  min-width: 70px;
+  width: 70px;
+  height: 40px;
+  font-size: 14px;
+}
+
+/* Items */
+.items {
+  left: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  min-width: 70px;
+  width: 70px;
+  height: 40px;
+  background-color: gray;
+  color: white;
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+.delete-btn {
+  min-width: 70px;
+  width: 70px;
+  height: 40px;
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+.toggle-btn.active {
+  background-color: #00704a;
+}
+
+/* Item Filter */
+.item-filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-filter > * {
+  margin-left: 10px;
+}
